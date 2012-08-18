@@ -1,0 +1,13 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+<alfresco-config>
+	
+	<!--
+	  This file can be used to enable or disable the cache for components and pages.
+	  We can also setup what theme we want the Alfresco Share web client to use.
+	 -->
+	
+	
+
+</alfresco-config>

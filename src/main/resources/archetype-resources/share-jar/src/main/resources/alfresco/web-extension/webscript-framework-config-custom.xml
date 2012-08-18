@@ -1,0 +1,12 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+<alfresco-config>
+
+    <!--
+        We can use this file to override the endpoints for the remote Alfresco server
+        when we want to run the Alfresco Repository and Alfresco Explorer on one machine
+        and the Alfresco Explorer web application on another machine.
+    -->
+
+</alfresco-config>

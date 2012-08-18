@@ -1,0 +1,27 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE beans PUBLIC '-//SPRING//DTD BEAN//EN' 'http://www.springframework.org/dtd/spring-beans.dtd'>
+
+<beans>
+
+<!-- This is the custom Spring bean configuration file for Alfresco Share.
+     Here you can add your spring beans, override the Web Script search path, override template
+     and script search path, add message property files etc -->
+
+   <!-- Add application extension messages -->
+<!--    <bean id="mycompany.resources" class="org.springframework.extensions.surf.util.ResourceBundleBootstrapComponent">
+      <property name="resourceBundles">
+         <list>
+            <value>alfresco.messages.custom</value>
+         </list>
+      </property>
+   </bean> -->
+
+    <!-- UI Action Evaluators -->
+    <!-- <bean id="mycompany.evaluator.doclib.action.isEmailed"
+          class="${package}.documentlibrary.action.evaluator.CheckIfDocIsEmailedEvaluator" /> -->
+
+</beans>
+
