@@ -136,6 +136,28 @@
 				</configuration>
 			</plugin>
 
+			<!-- Compress JavaScript -->
+			<plugin>
+				<groupId>net.sf.alchim</groupId>
+				<artifactId>yuicompressor-maven-plugin</artifactId>
+				<executions>
+					<execution>
+						<goals>
+							<goal>compress</goal>
+						</goals>
+						<configuration>
+							<excludes>
+								<exclude>**/*-min.js"</exclude>
+								<exclude>**/WEB-INF/**"</exclude>
+								<exclude>**/tiny_mce/**</exclude>
+								<exclude>**/yui/**</exclude>
+								<exclude>**/site-webscripts/**</exclude>
+							</excludes>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
 		</plugins>
 
 		<!-- Copy and filter application resource files from default location. 
@@ -179,28 +201,6 @@
 				</testResources>
 
 				<plugins>
-
-					<!-- Compress JavaScript -->
-					<plugin>
-						<groupId>net.sf.alchim</groupId>
-						<artifactId>yuicompressor-maven-plugin</artifactId>
-						<executions>
-							<execution>
-								<goals>
-									<goal>compress</goal>
-								</goals>
-								<configuration>
-									<excludes>
-										<exclude>**/*-min.js"</exclude>
-										<exclude>**/WEB-INF/**"</exclude>
-										<exclude>**/tiny_mce/**</exclude>
-										<exclude>**/yui/**</exclude>
-										<exclude>**/site-webscripts/**</exclude>
-									</excludes>
-								</configuration>
-							</execution>
-						</executions>
-					</plugin>
 
 					<!-- Create WAR that includes Share Extension JAR -->
 					<plugin>
