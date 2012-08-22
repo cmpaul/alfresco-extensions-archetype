@@ -16,8 +16,8 @@
     <bean id="${groupId}.dictionaryBootstrap" parent="dictionaryModelBootstrap" depends-on="dictionaryBootstrap">
         <property name="models">
             <list>
-                <value>alfresco/module/com_mycompany_module_cms/model/content-model.xml</value>
-                <value>alfresco/module/com_mycompany_module_cms/model/workflow-model.xml</value>
+                <value>alfresco/module/${groupId}.module.${rootArtifactId}/model/content-model.xml</value>
+                <value>alfresco/module/${groupId}.module.${rootArtifactId}/model/workflow-model.xml</value>
             </list>
         </property>
     </bean>
@@ -29,7 +29,7 @@
           class="org.alfresco.web.config.WebClientConfigBootstrap" init-method="init">
         <property name="configs">
             <list>
-                <value>classpath:alfresco/module/com_mycompany_module_cms/ui/web-client-config-custom.xml</value>
+                <value>classpath:alfresco/module/${groupId}.module.${rootArtifactId}/ui/web-client-config-custom.xml</value>
             </list>
         </property>
     </bean>
@@ -40,7 +40,7 @@
 	<bean id="${package}.resourceBundle" class="org.alfresco.web.app.ResourceBundleBootstrap">
       <property name="resourceBundles">
          <list>
-            <value>alfresco.module.com_mycompany_module_cms.ui.webclient</value>
+            <value>alfresco.module.${groupId}.module.${rootArtifactId}.ui.webclient</value>
          </list>
       </property>
     </bean>    
@@ -52,7 +52,7 @@
 			<list>
 				<props>
 					<prop key="engineId">jbpm</prop>
-					<prop key="location">alfresco/module/com_mycompany_module_cms/workflows/reviewandapprove/processdefinition.xml</prop>
+					<prop key="location">alfresco/module/${groupId}.module.${rootArtifactId}/workflows/reviewandapprove/processdefinition.xml</prop>
 					<prop key="mimetype">text/xml</prop>
 					<prop key="redeploy">true</prop>
 				</props>
@@ -60,7 +60,7 @@
 		</property>
         <property name="labels">
             <list>
-				<value>alfresco.module.com_mycompany_module_cms.ui.review-and-approve-workflow</value>
+				<value>alfresco.module.${groupId}.module.${rootArtifactId}.ui.review-and-approve-workflow</value>
             </list>
         </property>
     </bean>
