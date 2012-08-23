@@ -294,7 +294,7 @@
             <resource>
                 <filtering>true</filtering>
                 <directory>src/main/resources/alfresco/module/${module.id}</directory>
-				<targetPath>${project.build.directory}/${pom.artifactId}-${pom.version}</targetPath>
+				<targetPath>${project.build.directory}/${project.artifactId}-${project.version}</targetPath>
                 <includes>
 					<include>file-mapping.properties</include>
                 </includes>     
