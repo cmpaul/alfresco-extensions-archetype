@@ -11,6 +11,28 @@
             <include>**/*.xml</include>
             <include>**/*.properties</include>
           </includes>
+          <excludes>
+            <exclude>**/*.desc.xml</exclude>
+          </excludes>
+        </fileSet>
+        <fileSet filtered="true" packaged="true" encoding="UTF-8">
+          <directory>src/main/resources/alfresco/extension/templates/webscripts</directory>
+          <includes>
+            <include>*.xml</include>
+            <include>*.js</include>
+          </includes>
+          <excludes>
+            <exclude>*.ftl</exclude>
+          </excludes>
+        </fileSet>
+        <fileSet filtered="false" packaged="true" encoding="UTF-8">
+          <directory>src/main/resources/alfresco/extension/templates/webscripts</directory>
+          <includes>
+            <include>*.ftl</include>
+          </includes>
+          <excludes>
+            <exclude>*.xml</exclude>
+          </excludes>
         </fileSet>
         <fileSet filtered="true" packaged="true" encoding="UTF-8">
           <directory>src/test/java</directory>

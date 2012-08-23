@@ -1,0 +1,1 @@
+model.sampleMessage = "Hello, world!"

@@ -1,0 +1,10 @@
+<webscript>
+	<name>${rootArtifactId} Sample Webscript</name>
+	<shortname>${rootArtifactId}-sample</name>
+	<description>A sample webscript for the ${rootArtifactId} project.</description>
+	<url>/${rootArtifactId}/sample</url>
+	<family>${groupId}</family>
+	<format default="json" />
+	<authentication>user</authentication>
+	<transaction>none</transaction>
+</webscript>
