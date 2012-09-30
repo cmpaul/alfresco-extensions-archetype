@@ -60,7 +60,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <spring.version>3.0.5.RELEASE</spring.version>					<!-- For Alfresco 3.4.x use 3.0.0.RELEASE -->
-        <alfresco.version>4.0.2</alfresco.version>
+        <alfresco.version>4.0.2.9</alfresco.version>
         <alfresco.groupId>org.alfresco.enterprise</alfresco.groupId>  	<!-- Use "org.alfresco" for community artifacts -->
         <skip.functional.tests>true</skip.functional.tests>
     </properties>
